@@ -16,14 +16,6 @@ import os
 if os.path.exists('env.py'):
     import env
 
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': 'du9ulpbic',
-#     'API_KEY': '873337163686876',
-#     'API_SECRET': 'yIUOo-aEMmLgLG_9KHU9c-O-S40',
-# }
-
-# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
-
 
 CLOUDINARY_STORAGE = {
     'CLOUDINARY_URL': os.environ.get('CLOUDINARY_URL')
@@ -59,6 +51,7 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
+    'rest_framework',
     'profiles',
 ]
 
