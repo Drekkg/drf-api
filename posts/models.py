@@ -1,7 +1,4 @@
 from django.db import models
-
-# Create your models here.
-from django.db import models
 from django.contrib.auth.models import User
 
 
@@ -15,8 +12,8 @@ class Post(models.Model):
         ('brannan', 'Brannan'),
         ('earlybird', 'Earlybird'),
         ('hudson', 'Hudson'),
-        ('inkwell', 'Inkwell'), (
-            'lofi', 'Lo-Fi'),
+        ('inkwell', 'Inkwell'),
+        ('lofi', 'Lo-Fi'),
         ('kelvin', 'Kelvin'),
         ('normal', 'Normal'),
         ('nashville', 'Nashville'),
@@ -26,14 +23,13 @@ class Post(models.Model):
         ('walden', 'Walden'),
         ('xpro2', 'X-pro II')
     ]
-
     owner = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../default_profile_qdjgyp', blank=True
+        upload_to='images/', default='../default_post_rgq6aq', blank=True
     )
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'
