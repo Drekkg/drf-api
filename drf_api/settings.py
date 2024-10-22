@@ -9,9 +9,9 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
-
-from pathlib import Path
 import os
+from pathlib import Path
+
 
 if os.path.exists('env.py'):
     import env
@@ -52,11 +52,14 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'rest_framework',
+    'django_filters',
+
     'profiles',
     'posts',
     'comments',
     'likes',
     'followers',
+
 ]
 
 MIDDLEWARE = [
