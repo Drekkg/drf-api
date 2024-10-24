@@ -65,7 +65,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = True
 # su pw derekg1971
 ALLOWED_HOSTS = ['8000-drekkg-drfapi-48anwstu1os.ws.codeinstitute-ide.net',
-                 'vernon-makes-pancakes.herokuapp.com']
+                 'vernon-makes-pancakes-c73f647bd403.herokuapp.com.herokuapp.com']
 
 
 # Application definition
