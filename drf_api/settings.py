@@ -57,10 +57,11 @@ REST_AUTH_SERIALIZERS = {
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-2sv*b)^39%-_5%dfr7al@jt*sq(e^%4=bm42zgw(xsq8%l5+#m'
+
+SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = 'DEV' in os.environ
 # su pw derekg1971
 ALLOWED_HOSTS = ['8000-drekkg-drfapi-48anwstu1os.ws.codeinstitute-ide.net']
 ALLOWED_HOSTS = ['localhost', 'vernon-makes-pancakes.herokuapp.com']
