@@ -63,8 +63,9 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 # su pw derekg1971
-# ALLOWED_HOSTS = ['8000-drekkg-drfapi-48anwstu1os.ws.codeinstitute-ide.net']
-ALLOWED_HOSTS = ['localhost', 'vernon-makes-pancakes.herokuapp.com']
+ALLOWED_HOSTS = ['8000-drekkg-drfapi-48anwstu1os.ws.codeinstitute-ide.net',
+                 'vernon-makes-pancakes.herokuapp.com']
+
 
 # Application definition
 
