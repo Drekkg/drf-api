@@ -64,7 +64,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = 'DEV' in os.environ
 
 
-ALLOWED_HOSTS = ['.herokuapp.com',
+ALLOWED_HOSTS = ['vernon-makes-pancakes-c73f647bd403.herokuapp.com',
                  '8000-drekkg-drfapi-48anwstu1os.ws.codeinstitute-ide.net',
                  ]
 
